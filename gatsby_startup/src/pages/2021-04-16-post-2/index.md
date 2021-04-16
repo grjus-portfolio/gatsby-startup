@@ -1,5 +1,5 @@
 ---
-path: "/post-two"
+path: "/blog/post-two"
 date: "2021-04-16"
 title: "My Second Gatsby Post"
 author: "John Doe"

@@ -1,5 +1,5 @@
 ---
-path: "/post-one"
+path: "/blog/post-one"
 date: "2021-04-16"
 title: "My First Gatsby Post"
 author: "grjus"
