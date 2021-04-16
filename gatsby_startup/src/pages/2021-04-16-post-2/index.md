@@ -1,8 +1,13 @@
 ---
 path: "/blog/post-two"
 date: "2021-04-16"
-title: "My Second Gatsby Post"
-author: "John Doe"
+title: "Python"
+author: "grjus"
 ---
 
-This is very second **blog post**.
+### Example of Python code
+
+```python
+def greeting(name):
+    return f"Hello {name}"
+```

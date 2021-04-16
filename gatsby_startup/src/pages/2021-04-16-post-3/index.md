@@ -1,18 +1,19 @@
 ---
 path: "/blog/post-three"
 date: "2021-04-16"
-title: "My Third Post"
-author: "Grzegorz Brzeczyszczykiewicz"
+title: "LOLCODE"
+author: "grjus"
 ---
 
-This is very third **blog post**.
+### Example of LOLCODE
 
-## Introduction
-
-```python
-# This is some comment in python
-def greeting():
-    return 'Greetings mortal'
+```lolcode
+HAI 1.2
+CAN HAS STDIO?
+PLZ OPEN FILE "LOLCATS.TXT"?
+    AWSUM THX
+        VISIBLE FILE
+    O NOES
+        INVISIBLE "ERROR!"
+KTHXBYE
 ```
-
-Thas was fun !
