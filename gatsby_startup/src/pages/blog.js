@@ -1,10 +1,11 @@
 import { graphql, Link } from "gatsby"
-import React from "react"
+import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const BlogPage = ({ data }) => {
+  const [cont, setCoount] = useState(0)
   return (
     <Layout>
       <SEO title="About us" />
@@ -27,6 +28,9 @@ const BlogPage = ({ data }) => {
             </div>
           )
         })}
+        <p>Simple couter, nothing special here {cont}</p>
+        <button onClick={() => setCoount(prev => prev + 1)}>Increase</button>
+        <button onClick={() => setCoount(prev => prev - 1)}>Descrease</button>
       </div>
     </Layout>
   )
