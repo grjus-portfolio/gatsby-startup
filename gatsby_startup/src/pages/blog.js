@@ -10,7 +10,8 @@ const BlogPage = ({ data }) => {
     <Layout>
       <SEO title="About us" />
       <div>
-        <h1>Latest posts</h1>
+        <h2>Content generated using markdown files</h2>
+        <hr style={{ borderBottom: "1px solid white" }} />
         {data.allMarkdownRemark.edges.map(item => {
           return (
             <div key={item.node.id}>

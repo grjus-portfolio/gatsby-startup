@@ -3,12 +3,7 @@ import { Link } from "gatsby"
 
 const Menu = () => {
   return (
-    <div
-      style={{
-        background: "#f4f4f4",
-        paddingTop: "10px",
-      }}
-    >
+    <div className="menu-main">
       <ul
         style={{
           listStyle: "none",
@@ -27,8 +22,8 @@ const Menu = () => {
           </Link>
         </li>
         <li>
-          <Link className="menu-items" to="/services">
-            Service
+          <Link className="menu-items" to="/data-fetch">
+            Data Fetch
           </Link>
         </li>
         <li>
