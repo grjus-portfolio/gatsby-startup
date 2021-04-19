@@ -94,4 +94,21 @@ exports.sourceNodes = async ({
     }
     actions.createNode(commentNode)
   })
+
+  const resultJsonEditor = await fetch(`http://localhost:3000/jsonEditorPosts`)
+  const dataJsonEditor = await resultJsonEditor.json()
+  dataJsonEditor.forEach(item => {
+    const postNode = {
+      id: createNodeId(`${item.id}`),
+      name: item.name,
+      username: item.username,
+      subject: item.subject,
+      content: item.content,
+      internal: {
+        type: `jsonEditor`,
+        contentDigest: createContentDigest(item),
+      },
+    }
+    actions.createNode(postNode)
+  })
 }

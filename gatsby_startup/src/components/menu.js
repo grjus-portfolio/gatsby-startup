@@ -17,8 +17,8 @@ const Menu = () => {
           </Link>
         </li>
         <li>
-          <Link className="menu-items" to="/about">
-            About
+          <Link className="menu-items" to="/editor-js">
+            EditorJS
           </Link>
         </li>
         <li>
