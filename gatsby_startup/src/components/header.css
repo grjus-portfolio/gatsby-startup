@@ -1,0 +1,19 @@
+.header-main {
+  background-repeat: no-repeat;
+  color: whitesmoke;
+}
+
+.header-title {
+  color: rgb(192, 192, 192);
+  filter: blur(0px);
+}
+
+@media screen and (max-width: 450px) {
+  .header-main {
+    background-image: none;
+  }
+
+  .header-main h1 a {
+    filter: blur(0px);
+  }
+}
