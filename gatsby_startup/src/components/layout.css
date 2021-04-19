@@ -4,12 +4,14 @@ html {
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  background: rgb(43, 35, 35);
 }
 body {
   margin: 0;
+  text-align: justify;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
+  color: whitesmoke;
   font-family: Lato, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -53,18 +55,33 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: #333;
+  color: rgb(236, 222, 222);
   text-decoration: none;
   transition: color 250ms ease-in-out;
+}
+
+.menu-main {
+  background: rgb(55, 58, 58);
+  margin: 0 auto;
+  padding-top: 10px;
+  color: whitesmoke;
+  letter-spacing: 0.43px;
+}
+
+.menu-main li {
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
 }
 
 .menu-items::after {
   content: "";
   display: flex;
   position: relative;
+  top: 5px;
   transform: scaleX(0);
   transform-origin: left;
-  border: 1px solid orange;
+  border: 1px solid rgb(236, 222, 222);
   transition: transform 250ms ease-in-out;
 }
 
@@ -75,7 +92,8 @@ a {
 
 a:hover {
   outline-width: 0;
-  color: orange;
+  color: rgb(236, 222, 222);
+  font-weight: bold;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
