@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import EditorJS from "react-editor-js"
 import EDITOR_TOOLS from "./config"
+import { navigate } from "@reach/router"
 
 const AppEditor = () => {
   const [editor, setEditor] = useState(null)
@@ -30,6 +31,7 @@ const AppEditor = () => {
         body: JSON.stringify(fetchData),
       }).then(res => console.log(res))
     })
+    navigate("/confirm")
   }
   return (
     <>
